@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
@@ -17,7 +15,7 @@ const Navbar = () => {
         <Link  to="/Login"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Log in</li></Link>
         <Link  to="/Signup"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Sign up</li></Link>
         </div>
-        {/* <Link  to="/Learnmore"><li className='absolute text-2xl left-[550px] top-80'>Learn more <span>→</span></li></Link> */}
+        {/* <Link  to="/Learnmore"><li className='absolute  text-2xl left-[550px] top-80'>Learn more <span>→</span></li></Link> */}
             </nav>
             
     </div>
