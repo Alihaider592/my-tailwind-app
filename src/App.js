@@ -10,6 +10,7 @@ import Login from "./components/Login"
 import Learnmore from "./components/Learnmore"
 import Signup from "./components/Signup"
 import { createBrowserRouter, RouterProvider,outlet } from "react-router-dom"
+import { useState } from "react"
 function App() {
     const router = createBrowserRouter([
         {
@@ -46,11 +47,12 @@ function App() {
         },
     ]) 
       return(
-        <>
+          <>
         <RouterProvider router={router}/>
         <Mylogo className='absolute bottom-[580px] invert'/>
         </>
     )
 }
+            
 export default App
 

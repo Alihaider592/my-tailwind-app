@@ -5,6 +5,7 @@ const Navbar = () => {
     <div>
         
       <nav className='flex text-white  list-none space-x-14 font-bold h-12  p-8 justify-center items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 '>
+        <button>change mode</button>
         <Link  to="/"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Home</li></Link>
         <Link  to="/Contact"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Contact</li></Link>
         <Link  to="/Blog"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Blog</li></Link>
@@ -17,7 +18,7 @@ const Navbar = () => {
         </div>
         {/* <Link  to="/Learnmore"><li className='absolute  text-2xl left-[550px] top-80'>Learn more <span>→</span></li></Link> */}
             </nav>
-            
+         
     </div>
   )
 }
