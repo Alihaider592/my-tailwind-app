@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './ReadMore'
 import { Link } from 'react-router-dom'
 const Login = () => {
   return (
@@ -12,7 +13,12 @@ const Login = () => {
         <input className='fill-blue-400 ' type="radio" id='Remember me' name='Remember me' value="Remember me" />
         <label className='text-white ' htmlFor="name"> Remember me</label>
         </div>
-        <button className='bg-white h-10 rounded-3xl font-bold mt-5 hover:bg-slate-300 w-80'>Log in</button>
+         <Button 
+        text="Log in" 
+        textColor="" 
+        bgColor="bg-white" 
+        className="w-72  m-2"
+      />
         <p className='flex pl-20 mt-2 text-white'>Don't have any account ?<Link className='list-none hover:underline'  to="/Signup"><li className=''>Sign up</li></Link></p>
       </form>
     </div>
