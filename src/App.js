@@ -10,7 +10,6 @@ import Login from "./components/Login"
 import Learnmore from "./components/Learnmore"
 import Signup from "./components/Signup"
 import { createBrowserRouter, RouterProvider,outlet } from "react-router-dom"
-import { useState } from "react"
 function App() {
     const router = createBrowserRouter([
         {

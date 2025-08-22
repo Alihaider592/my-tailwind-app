@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "./ReadMore";
 import { Link } from "react-router-dom";
 
@@ -8,30 +9,27 @@ const Signup = () => {
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
 
-  // Handle input change
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
-  // Handle form submit
   const handleSubmit = (e) => {
-    e.preventDefault(); // prevent page reload
+    e.preventDefault();
 
-    // Get previous users from localStorage
     const users = JSON.parse(localStorage.getItem("users")) || [];
 
-    // Add new user
     users.push(formData);
 
-    // Save back to localStorage
+
     localStorage.setItem("users", JSON.stringify(users));
 
-    // Optionally reset the form
     setFormData({ username: "", email: "", password: "" });
 
-    alert("User saved!"); // feedback
+    alert("User saved!");
+      navigate('/Login')
   };
 
   return (

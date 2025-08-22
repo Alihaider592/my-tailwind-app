@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const Navbar = () => {
+import Logout from './Logout'
+const Navbar = ({ user, onLogout }) => {
   return (
     <div>
         
@@ -14,6 +15,7 @@ const Navbar = () => {
         <div className='flex space-x-10 relative left-60 '>
         <Link  to="/Login"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Log in</li></Link>
         <Link  to="/Signup"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Sign up</li></Link>
+         {setitems&& <Logout user={user} onLogout={handleLogout} />}
         </div>
         {/* <Link  to="/Learnmore"><li className='absolute  text-2xl left-[550px] top-80'>Learn more <span>→</span></li></Link> */}            </nav>
          
