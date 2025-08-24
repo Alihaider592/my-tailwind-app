@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logout from './Logout'
+import { handleLogout } from './Logout'
+import { useNavigate } from "react-router-dom";
 const Navbar = ({ user, onLogout }) => {
+    const navigate = useNavigate();
   return (
     <div>
         
@@ -15,7 +17,7 @@ const Navbar = ({ user, onLogout }) => {
         <div className='flex space-x-10 relative left-60 '>
         <Link  to="/Login"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Log in</li></Link>
         <Link  to="/Signup"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Sign up</li></Link>
-         {setitems&& <Logout user={user} onLogout={handleLogout} />}
+         <button onClick={() => handleLogout(null, navigate)}>Logout</button>
         </div>
         {/* <Link  to="/Learnmore"><li className='absolute  text-2xl left-[550px] top-80'>Learn more <span>→</span></li></Link> */}            </nav>
          

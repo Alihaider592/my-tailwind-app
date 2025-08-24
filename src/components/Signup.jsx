@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
+import { toast,ToastContainer } from "react-toastify";
+// import { ToastContainer } from "react-toastify"
 import { useNavigate } from "react-router-dom";
 import Button from "./ReadMore";
 import { Link } from "react-router-dom";
@@ -21,15 +24,18 @@ const Signup = () => {
 
     const users = JSON.parse(localStorage.getItem("users")) || [];
 
-    users.push(formData);
+    users?.push(formData);
 
 
     localStorage.setItem("users", JSON.stringify(users));
 
     setFormData({ username: "", email: "", password: "" });
 
-    alert("User saved!");
+    // alert("User saved!");
+    toast.success("you have signup successfully")
+    setTimeout(()=>{
       navigate('/Login')
+    },1500)
   };
 
   return (
@@ -86,6 +92,7 @@ const Signup = () => {
           </p>
         </form>
       </div>
+             <ToastContainer position="top-center" autoClose="3000" />
     </div>
   );
 };
