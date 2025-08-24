@@ -17,7 +17,8 @@ const Navbar = ({ user, onLogout }) => {
         <div className='flex space-x-10 relative left-60 '>
         <Link  to="/Login"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Log in</li></Link>
         <Link  to="/Signup"><li className='hover:text-yellow-300 hover:underline active:text-red-500'>Sign up</li></Link>
-         <button onClick={() => handleLogout(null, navigate)}>Logout</button>
+         <button onClick={() => handleLogout(null, navigate)}>Logout</button>cd /home/aalik/Documents/GitHub/my-tailwind-app
+
         </div>
         {/* <Link  to="/Learnmore"><li className='absolute  text-2xl left-[550px] top-80'>Learn more <span>→</span></li></Link> */}            </nav>
          
