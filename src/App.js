@@ -1,7 +1,7 @@
 import "./App.css" 
 import Services from "./components/Services"
 
-import {ReactComponent as Mylogo} from"./components/logo.svg"
+// import {ReactComponent as Mylogo} from"./components/logo.svg"
 import Home from "./components/Home"
 import About from "./components/About"
 import Contact from "./components/Contact"
@@ -50,7 +50,8 @@ function App() {
       return(
           <>
         <RouterProvider router={router}/>
-        <Mylogo className='absolute bottom-[580px] invert'/>
+        {/* <Mylogo className='absolute pb-3 sm:top-0 invert'/> */}
+
         </>
     )
 }

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { toast , ToastContainer} from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 import Button from './ReadMore'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
@@ -28,13 +30,21 @@ const Login = () => {
         user.password === formData.password
       )
       if (matchedUser) {
-        alert('logged in successfull')
+        // alert('logged in successfull')
+        toast.success("Logged in successfull")
         setError('')
         // onLogin(matchedUser)
-        navigate('/')
+        
+         setTimeout(()=>{
+      navigate('/')
+    },3000)
       }else{
         // setError('invalid username or password')
-        alert ('invalid username or password')
+        // alert ('invalid username or password')
+        toast.error("you need to sign up first")
+         setTimeout(()=>{
+      navigate('/Signup')
+    },3000)
       }
     }
 
@@ -72,6 +82,7 @@ const Login = () => {
         <p className='flex pl-20 mt-2 text-white'>Don't have any account ?<Link className='list-none hover:underline'  to="/Signup"><li className=''>Sign up</li></Link></p>
       </form>
     </div>
+    <ToastContainer position="top-center" autoClose="3000" />
       </div>
   )
 }

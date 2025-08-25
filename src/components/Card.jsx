@@ -13,7 +13,7 @@ const Section = ({
     className={`font-bold,${image},${title},${description},${height},${width},${className}
     // `}
     >
-             <div className='m-10 h-[470px] hover:scale-105 w-[350px] p-2 rounded-3xl bg-white'>
+             <div className='m-10 h-[470px] hover:scale-105 w-[350px] p-2  rounded-3xl bg-white'>
             <img className=' rounded-3xl h-52 w-96' src={image} alt="" />
             <div className='font-bold m-3 '>{title}</div>
             <div className='ml-3 text-gray-400'>{description}</div>

@@ -86,7 +86,7 @@ const Services = () => {
     buttonColor: 'bg-red-500',
   }
   return (
-    <div className='bg-purple-500 '>
+    <div className='bg-purple-500  '>
       {/* main text */}
         <main className="container mx-auto px-6 md:px-12 py-16">
         <div className="text-center mb-12">

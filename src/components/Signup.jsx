@@ -35,7 +35,7 @@ const Signup = () => {
     toast.success("you have signup successfully")
     setTimeout(()=>{
       navigate('/Login')
-    },1500)
+    },3000)
   };
 
   return (

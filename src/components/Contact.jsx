@@ -1,10 +1,11 @@
 import React from 'react'
+import Contactusform from './Contactusform';
 import { Link } from 'react-router-dom'
 export default function Contact() {
   return (
-    <div className=' flex  bg-purple-500'>
-    <div className="max-w-3xl  mx- p-6">
-      <h1 className="text-4xl font-bold text-white ml-[500px] mb-6">Contact Us</h1>
+    <div className=' flex  bg-purple-500 sm:flex-wrap sm:justify-center sm:pb-5'>
+    <div className="max-w-3xl  mx- p-6 sm:p-5">
+      <h1 className="text-4xl font-bold text-white ml-[500px] sm:ml-0 mb-6 ">Contact Us</h1>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold text-white mb-3">
@@ -50,19 +51,7 @@ export default function Contact() {
         </p>
       </section>
     </div>
-    <section>
-      <div className='h-[350px] w-[500px] mt-28 mr-10  pl-32 bg-white bg-opacity-10 rounded-xl shadow-lg '>
-        <h1 className='text-white text-2xl font-bold pt-5 pl-[65px] '>Contact Us</h1>
-        <p className='text-white mt-1 m-5'>We will get back to you asap!</p>
-        <form action="post">
-          <input className='p-2 w-28 rounded-sm border-1 border-gray-400' type="text" id='first name' placeholder='First name'/>
-          <input className='p-2 w-28 rounded-sm border-1 border-gray-400 ml-10' type="text" id='first name' placeholder='Last name'/>
-          <input className='p-2 block mt-5 w-[263px] rounded-sm border-1 border-gray-400' type="text" id='gmail' placeholder='E-mail ' />
-           <input className='p-2  mt-5 w-[263px] rounded-sm border-1 border-gray-400' type="text" id='Phone' placeholder='Phone ' />
-        <button class="px-8 py-3 bg-pink-600 hover:bg-pink-700 top-[70px] right-[170px]  rounded-lg text-white relative font-medium shadow-lg">Send</button>
-        </form>
-      </div>
-    </section>
+    <Contactusform/>
     <div>
   </div>
     </div>
