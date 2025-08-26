@@ -16,10 +16,6 @@ const Login = () => {
     const handleChange = (e)=>{
   const { id, value } = e.target;
   setFormData((prev) => ({...prev,[id]: value,}));
-  // const handleLogin = (e) =>{
-  //   e.preventDefault();
-  // }
-    
   }
   const handleLogin = (e)=>{
     e.preventDefault();
@@ -30,17 +26,12 @@ const Login = () => {
         user.password === formData.password
       )
       if (matchedUser) {
-        // alert('logged in successfull')
         toast.success("Logged in successfull")
         setError('')
-        // onLogin(matchedUser)
-        
          setTimeout(()=>{
       navigate('/')
     },3000)
       }else{
-        // setError('invalid username or password')
-        // alert ('invalid username or password')
         toast.error("you need to sign up first")
          setTimeout(()=>{
       navigate('/Signup')
@@ -49,7 +40,7 @@ const Login = () => {
     }
 
   return (
-    <div className='bg-gradient-to-r from-indigo-800 via-purple-800 to-pink-800 p-[104px] justify-center items-center flex '>
+    <div className='bg-gradient-to-r w-full min-h-screen from-indigo-800 via-purple-800 to-pink-800 p-[104px] justify-center items-center flex '>
       <div className=' rounded-3xl z-10 relative top h-[450px] w-96 text-center bg-purple-700 shadow-2xl shadow-purple-400 shadow-inner bg-transparent '>
       <h1 className='text-3xl  font-bold text-white mt-10'>Log in</h1>
       <form onSubmit={handleLogin}  action="post">
@@ -70,15 +61,16 @@ const Login = () => {
         <div className='mt-7 relative right-[85px]'>
         <input className='fill-blue-400 ' type="radio" id='Remember me' name='Remember me' value="Remember me" />
         <label className='text-white ' htmlFor="name"> Remember me</label>
+        
         </div>
-      <Button
-      
+         <Button
       onClick={handleLogin}
       text='login'
       textColor='black'
       bgColor='bg-white'
-      className=''
+      className='w-56 mt-2'
       />
+     
         <p className='flex pl-20 mt-2 text-white'>Don't have any account ?<Link className='list-none hover:underline'  to="/Signup"><li className=''>Sign up</li></Link></p>
       </form>
     </div>

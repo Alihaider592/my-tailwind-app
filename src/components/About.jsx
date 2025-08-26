@@ -31,7 +31,7 @@ const About = () => {
   ];
 
   return (
-    <div className="flex justify-center p-10 bg-purple-500">
+    <div className="flex justify-center w-full min-h-screen p-10 bg-purple-500">
       <div className="w-full max-w-6xl">
         {/* Heading */}
         <h1 className="font-bold text-gray-100 text-4xl sm:text-5xl mb-10">

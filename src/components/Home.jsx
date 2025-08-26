@@ -11,14 +11,23 @@ const Home = () => {
       <div className='z-10 flex relative items-center justify-center m-1 '>Your daily dose of programming tips, tutorials, and tech insights.Whether you're debugging at</div>  
       <div className='z-10 relative flex items-center justify-center '> midnight or building your next big idea,we've got the knowledge you  </div>
      <div className='flex relative items-center justify-center '>  need — byte by byte.</div>
+   <div className="flex justify-center mt-6">
+  <button className="px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 
+                     bg-pink-600 hover:bg-pink-700 
+                     rounded-lg text-white font-medium shadow-lg 
+                     transition duration-300 ease-in-out">
+    <Link to="/Learnmore">Learn more →</Link>
+  </button>
+</div>
+
+
     </p>
-    <button class="px-6 py-3 bg-pink-600 hover:bg-pink-700 relative ml-[40%]  transition duration-300 ease-in-out rounded-lg text-white  font-medium shadow-lg"> <Link  to="/Learnmore"><li className='list-none '>Learn more→</li></Link></button>
     <div className="flex justify-center mt-6">
 </div>
 
     </div>
-    <div className='text-white  last:grid grid-cols-3 gap-10 bg-purple-500 p-2 flex flex-wrap '>
-      <section class="max-w-4xl mx-auto px-6 py-12">
+    <div className='w-full min-h-screen  text-white justify-center items-center block-flex last:grid grid-cols-3 gap-10  bg-purple-500 p-2  '>
+      <section class="max-w-4xl mt-[5vw] mb-[2vw] mx-auto px-6 py-12">
    What You'll Discover 
   <h2 class="text-3xl font-bold">What You’ll Discover</h2>
   <ul class="space-y-4 ">
@@ -46,7 +55,10 @@ const Home = () => {
 <section class="max-w-4xl mx-auto px-6 py-12 bg-white bg-opacity-10 rounded-xl shadow-lg text-center">
   <h2 class="text-3xl font-bold mb-4">Stay Connected</h2>
   <p class="mb-6">📬 Join our growing community of developers — Subscribe for weekly updates and never miss a post.</p>
-  <button class="px-6 py-3 bg-pink-600 duration-300 ease-in-out hover:bg-pink-700 rounded-lg text-white font-medium shadow-lg">
+  <button class=" px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 
+                     bg-pink-600 hover:bg-pink-700 
+                     rounded-lg text-white font-medium shadow-lg 
+                     transition duration-300 ease-in-out">
    <h1> Subscribe Now</h1>
   </button>
 </section>
@@ -77,7 +89,7 @@ const Home = () => {
       </div>
       <div>
       <form action="post">
-        <input className='w-[300px] ml-28 mb-10 h-10 rounded-lg h-50 pl-10' type="text" id='Enter your email' placeholder='Enter your email'/><button class="px-4 relative right-8 m-10 bg-pink-600 hover:bg-pink-700 rounded-lg text-white h-10 ">Join</button>
+        <input className='w-[300px] ml-28 mb-10 h-10 rounded-lg h-50 pl-10' type="text" id='Enter your email' placeholder='Enter your email'/><button class="px-4 relative right-8 m-10 bg-pink-600 transition-all duration-300 ease-in-out hover:bg-pink-700 rounded-lg text-white h-10 ">Join</button>
       </form>
       </div>
       <div>

@@ -39,7 +39,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-indigo-800 via-purple-800 to-pink-800 p-[104px] justify-center items-center flex">
+    <div className="bg-gradient-to-r w-full min-h-screen from-indigo-800 via-purple-800 to-pink-800 p-[104px] justify-center items-center flex">
       <div className="rounded-3xl z-10 relative h-[450px] w-96 text-center bg-purple-700 shadow-2xl shadow-purple-400 shadow-inner bg-transparent">
         <h1 className="text-3xl font-bold text-white mt-10">Sign up</h1>
         <form onSubmit={handleSubmit}>
@@ -83,7 +83,7 @@ const Signup = () => {
               Remember me
             </label>
           </div>
-          <Button text="Sign Up" textColor="" bgColor="bg-white" className="w-72 m-2" />
+          <Button text="Sign Up" textColor="" bgColor="bg-white" className="w-56 mt-2" />
           <p className="flex list-none pl-20 mt-2 text-white">
             Already have an account?
             <Link to="/Login">

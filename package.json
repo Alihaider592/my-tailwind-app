@@ -8,6 +8,8 @@
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "farmer": "^0.0.1",
+    "motion": "^12.23.12",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^6.30.1",

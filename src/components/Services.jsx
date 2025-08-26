@@ -86,9 +86,9 @@ const Services = () => {
     buttonColor: 'bg-red-500',
   }
   return (
-    <div className='bg-purple-500  '>
+    <div className='bg-purple-500 '>
       {/* main text */}
-        <main className="container mx-auto px-6 md:px-12 py-16">
+        <main className="py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">How DevLogix Helps You Succeed</h1>
           <p className="text-lg text-white max-w-2xl mx-auto">
@@ -97,8 +97,9 @@ const Services = () => {
         </div>
 
         {/* card 1 */}
-        <div className="  flex justify-center items-center gap-8">
-          <div className='h-[350px] w-[300px] p-8 bg-white rounded-3xl hover:scale-105 '>
+        <div className=''>
+        <div className="w-full min-h-screen flex flex-wrap gap-5 justify-center ">
+          <div className='h-[350px] w-[300px] p-8 bg-white rounded-3xl transition-all duration-300 ease-in-out hover:scale-105 '>
           <div className='ml-[85px] h-14 w-14 rounded-full flex justify-center items-center bg-blue-200 mb-5 '>{services.icon}</div>
           <div className='ml-10 mb-3 font-bold text-gray-900 text-xl'>{services.Title}</div>
           <div className='text-gray-700'>{services.discription}</div>
@@ -108,11 +109,11 @@ const Services = () => {
         text="Read More" 
         textColor="text-white" 
         bgColor="bg-blue-500" 
-        className="hover:bg-green-700 relative left-16 top-5"
+        className="duration-300 ease-in-out hover:scale-105 hover:bg-green-700 relative left-16 top-5"
       />
           </div>
           {/* card2 */}
-          <div className='h-[350px] w-[300px] p-8 bg-white rounded-3xl hover:scale-105'>
+          <div className='h-[350px] w-[300px] p-8 bg-white rounded-3xl duration-300 ease-in-out  hover:scale-105'>
           <div className='ml-20 mb-5 h-14 w-14 rounded-full bg-green-200 justify-center items-center flex '>{feature.icon}</div>
           <div className='ml-7 mb-3 font-bold text-gray-900 text-lg'>{feature.title}</div>
           <div className='text-gray-700' >{feature.description}</div>
@@ -122,11 +123,11 @@ const Services = () => {
         text="Read More" 
         textColor="text-white" 
         bgColor="bg-green-500" 
-        className="hover:bg-green-700 relative left-16 top-5"
+        className="duration-300 ease-in-out hover:scale-105 hover:bg-green-700 relative left-16 top-5"
       />
           </div>
           {/* card 3 */}
-          <div className='h-[350px] w-[300px] p-8 bg-white rounded-3xl hover:scale-105'>
+          <div className='h-[350px] w-[300px] p-8 bg-white rounded-3xl duration-300 ease-in-out  hover:scale-105'>
           <div className='ml-20 mb-5 h-14 w-14 rounded-full bg-yellow-200 flex justify-center items-center'>{service.icon}</div>
           <div className='ml-10 mb-3 font-bold text-gray-900 text-xl'>{service.title}</div>
           <div className='text-gray-700' >{service.description}</div>         
@@ -136,12 +137,11 @@ const Services = () => {
         text="Read More" 
         textColor="text-white" 
         bgColor="bg-yellow-500" 
-        className="hover:bg-green-500 relative left-16 top-5"
+        className="duration-300 ease-in-out hover:scale-105 hover:bg-green-500 relative left-16 top-5"
       />
         </div>
-        </div>
         {/* card4 */}
-        <div className='h-[350px] w-[300px] p-8 bg-white ml-28 mt-10 rounded-3xl hover:scale-105'>
+        <div className='h-[350px] w-[300px] p-8 bg-white rounded-3xl duration-300 ease-in-out  hover:scale-105'>
         <div className='ml-20 mb-5 h-14 w-14 rounded-full bg-yellow-200 flex justify-center items-center'>{serv.icon}</div>
         <div className='ml-6 mb-3 font-bold text-gray-900 text-xl'>{serv.title}</div>
         <div className='text-gray-700'>{serv.description}</div>
@@ -151,8 +151,10 @@ const Services = () => {
         text="Read More" 
         textColor="text-white" 
         bgColor="bg-red-600" 
-        className="hover:bg-green-500 relative left-16 top-5"
-      />
+        className="duration-300 ease-in-out hover:scale-105 hover:bg-green-500 relative left-16 top-5"
+        />
+        </div>
+       </div>
         </div>
       </main>
       </div>

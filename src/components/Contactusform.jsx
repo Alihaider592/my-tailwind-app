@@ -39,11 +39,11 @@ const Contactusform = () => {
   return (
     <div>
       <section>
-      <div className='h-[350px] w-[500px] mt-28 mr-10  pl-32 bg-white bg-opacity-10 rounded-xl shadow-lg '>
+      <div className='h-[420px] w-[500px] mt-28 mr-10  pl-32 bg-white bg-opacity-10 rounded-xl shadow-lg '>
         <h1 className='text-white text-2xl font-bold pt-5 pl-[65px] '>Contact Us</h1>
         <p className='text-white mt-1 m-5'>We will get back to you asap!</p>
         <form onSubmit={handleSubmit} action="post">
-          <input className='p-2 w-28 rounded-sm border-1 border-gray-400'
+          <input className='p-2 w-[263px] rounded-lg border-1 border-gray-400'
            type="FirstName"
             id='FirstName'
              placeholder='FirstName'
@@ -51,7 +51,7 @@ const Contactusform = () => {
             onChange={handleChange}
             required
              />
-          <input className='p-2 w-28 rounded-sm border-1 border-gray-400 ml-10'
+          <input className='p-2 w-[263px] mt-5 rounded-lg border-1 border-gray-400'
            type="LastName"
             id='LastName'
              placeholder='LastName'
@@ -59,7 +59,7 @@ const Contactusform = () => {
             onChange={handleChange}
             required
              />
-          <input className='p-2 block mt-5 w-[263px] rounded-sm border-1 border-gray-400' 
+          <input className='p-2 block mt-5 w-[263px] rounded-lg border-1 border-gray-400' 
           type="Email"
            id='Email'
             placeholder='Email '
@@ -67,7 +67,7 @@ const Contactusform = () => {
             onChange={handleChange}
             required
              />
-           <input className='p-2  mt-5 w-[263px] rounded-sm border-1 border-gray-400'
+           <input className='p-2  mt-5 w-[263px] rounded-lg border-1 border-gray-400'
             type="text"
              id='Phone'
               placeholder='Phone ' 

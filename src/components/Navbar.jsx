@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { handleLogout } from './Logout'
 import { useNavigate } from "react-router-dom";
+import { nav } from 'motion/react-client';
 
 const Navbar = ({ user, onLogout }) => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ const Navbar = ({ user, onLogout }) => {
         {/* Logo Section */}
         <div className="flex items-center text-xl font-extrabold">
           <img 
-            src="/logo.svg"   // ✅ public folder path
+            src="/logo.svg"   
             alt="Logo"
             className="h-12 w-auto invert"
           />
@@ -51,12 +52,12 @@ const Navbar = ({ user, onLogout }) => {
         ">
           <li><Link to="/Login" className="hover:text-yellow-300 hover:underline active:text-red-500">Log in</Link></li>
           <li><Link to="/Signup" className="hover:text-yellow-300 hover:underline active:text-red-500">Sign up</Link></li>
-          <button 
+          {/* <button 
             className="hover:text-yellow-300 hover:underline active:text-red-500"
             onClick={() => handleLogout(null, navigate)}
           >
             Logout
-          </button>
+          </button> */}
         </div>
       </nav>
     </div>

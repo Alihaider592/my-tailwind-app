@@ -1,6 +1,4 @@
 import React from 'react'
-// import { Vlog } from "./Blog";
-import Button from './ReadMore'
 import Home from './Home'
 import Section from './Card'
 import Category from './Category'
@@ -98,22 +96,71 @@ const cards = [
     width:'350px',
     className:'',
   },
+  {
+    Image:'/img8.png',
+    title :'The Modern Way to Find Your Doctor ',
+    description:'Clean healthcare website. Main page helps users find doctors and book appointments. A separate section shows testimonials and a contact form for business. It uses a calm, professional color scheme.',
+    height: '470px',
+    width:'350px',
+    className:'',
+  },
+  {
+    image:'/img10.png',
+    title :'The Modern Way to Find Your Doctor ',
+    description:'Clean healthcare website. Main page helps users find doctors and book appointments. A separate section shows testimonials and a contact form for business. It uses a calm, professional color scheme.',
+    height: '470px',
+    width:'350px',
+    className:'',
+  },
+  {
+    image:'/img12.png',
+    title :'The Modern Way to Find Your Doctor ',
+    description:'Clean healthcare website. Main page helps users find doctors and book appointments. A separate section shows testimonials and a contact form for business. It uses a calm, professional color scheme.',
+    height: '470px',
+    width:'350px',
+    className:'',
+  },
+  {
+    image:'/img3.png',
+    title :'The Modern Way to Find Your Doctor ',
+    description:'Clean healthcare website. Main page helps users find doctors and book appointments. A separate section shows testimonials and a contact form for business. It uses a calm, professional color scheme.',
+    height: '470px',
+    width:'350px',
+    className:'',
+  },
+  {
+    image:'/img4.png',
+    title :'The Modern Way to Find Your Doctor ',
+    description:'Clean healthcare website. Main page helps users find doctors and book appointments. A separate section shows testimonials and a contact form for business. It uses a calm, professional color scheme.',
+    height: '470px',
+    width:'350px',
+    className:'',
+  },
+  {
+    image:'/img5.png',
+    title :'The Modern Way to Find Your Doctor ',
+    description:'Clean healthcare website. Main page helps users find doctors and book appointments. A separate section shows testimonials and a contact form for business. It uses a calm, professional color scheme.',
+    height: '470px',
+    width:'350px',
+    className:'',
+  },
   ]
   const Blog = () => {
-    const blog = {
+    const blog = { 
     }
     return (
       <div className=' bg-purple-500'>
-        <div className="relative w-full">
+        <div className="relative  flex w-full min-h-screen">
   {/* Image */}
   <img
-    className="h-96 w-full object-cover opacity-70 shadow-purple shadow-sm"
+    className=" w-full object-cover h-auto opacity-70 shadow-purple shadow-sm"
     src="img2.png"
     alt="Blog background"
   />
+  
 
   {/* Heading */}
-  <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+  <div className="absolute  inset-0 flex flex-col items-center justify-center text-center px-4">
     <h1 className="text-4xl sm:text-7xl text-gray-300 font-bold z-10">Blog</h1>
     <p className="text-base sm:text-lg text-gray-100 font-bold mt-4 z-10">
       Remember, the best way to learn coding is by building projects. Start
@@ -126,7 +173,7 @@ const cards = [
 </div>
 
         <Category/>
-        <div className='flex flex-wrap'>
+        <div className='w-full min-h-screen sm:ml-24 flex  flex-wrap'>
           {cards.map((cards,index)=>(
             <Section
             key={index}

@@ -3,7 +3,7 @@ import Contactusform from './Contactusform';
 import { Link } from 'react-router-dom'
 export default function Contact() {
   return (
-    <div className=' flex  bg-purple-500 sm:flex-wrap sm:justify-center sm:pb-5'>
+    <div className=' flex w-full min-h-screen  bg-purple-500 sm:flex-wrap sm:justify-center '>
     <div className="max-w-3xl  mx- p-6 sm:p-5">
       <h1 className="text-4xl font-bold text-white ml-[500px] sm:ml-0 mb-6 ">Contact Us</h1>
 
