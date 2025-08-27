@@ -1,4 +1,5 @@
 import "./App.css" 
+import Hamburgercomponents from "./components/Hamburger"
 import Services from "./components/Services"
 import Home from "./components/Home"
 import About from "./components/About"
@@ -11,6 +12,7 @@ import Signup from "./components/Signup"
 import { createBrowserRouter, RouterProvider,outlet } from "react-router-dom"
 function App() {
     const router = createBrowserRouter([
+        // {path:"/Hamburger", element:<><Navbar/><Hamburgercomponents/></>},
         {path : "/",element:<><Navbar/><Home/></>},
         {path : "/Contact",element:<><Navbar/><Contact/></>},
         {path : "/Blog",element:<><Navbar/><Blog/></>},
@@ -20,8 +22,8 @@ function App() {
         {path : "/About",element:<><Navbar/><About/></>},
         {path:"/Learnmore",element: <><Navbar/><Learnmore/></>},
     ]) 
-      return(
-          <>
+    return(
+        <>
         <RouterProvider router={router}/>
         </>
     )

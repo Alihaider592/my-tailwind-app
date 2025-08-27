@@ -14,7 +14,7 @@ const Button = ({
   return (
     <button
       onClick={onClick}
-      className={`font-bold rounded-full p-2 ${textColor} ${bgColor} ${width} ${height} ${className}`}
+      className={`font-bold  rounded-full p-2 ${textColor} ${bgColor} ${width} ${height} ${className}`}
     >
       {text}
     </button>

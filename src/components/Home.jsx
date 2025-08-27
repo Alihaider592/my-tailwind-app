@@ -6,8 +6,8 @@ const Home = () => {
     <>
     <img className='absolute opacity-45 blur-sm h-96 w-[100%]' src="imgback.png"/>
     <div className='h-96 w-full z-10 p-20  font-bold  bg-purple-800'>
-      <h1 className=' relative text-5xl flex items-center justify-center mb-5 font-bold z-10 '> <div className='text-pink-500'> Welocom</div><div className='text-purple-500'> to </div><div className='text-yellow-500'> Devlogix</div> </h1>
-      <p class="z-10 text-lg md:text-xl sm:left-6 text-gray-300 mb-8 sm:font-size [17px] height-[100px] relative left-[18px];">
+      <h1 className=' relative text-5xl flex max-sm:text-4xl items-center gap-2 justify-center mb-5 font-bold z-10 '> <div className='text-pink-500'> Welocom</div><div className='text-purple-500'> to </div><div className='text-yellow-500'> Devlogix</div> </h1>
+      <p class="z-10 text-lg md:text-xl sm:left-6 text-gray-300 mb-8 max-sm:text-sm sm:font-size [17px] height-[100px] relative left-[18px];">
       <div className='z-10 flex relative items-center justify-center m-1 '>Your daily dose of programming tips, tutorials, and tech insights.Whether you're debugging at</div>  
       <div className='z-10 relative flex items-center justify-center '> midnight or building your next big idea,we've got the knowledge you  </div>
      <div className='flex relative items-center justify-center '>  need — byte by byte.</div>
@@ -74,22 +74,14 @@ const Home = () => {
     </div>
   {/* footer */}
 <div className=''>
-  <div className=' bg-gray-900 text-gray-500'>
-<h1 className='text-xl font-bold ml-10 pb-3 pt-10' >Quick Links</h1>
-<div className='absolute pl-10 flex gap-16 ml-14 list-none' >
-              <Link  to="/"><li className='hover:underline'>Home</li></Link>
-        <Link  to="/Contact"><li className='hover:underline'>Contact</li></Link>
-        <Link  to="/Blog"><li className='hover:underline'>Blog</li></Link>
-        <Link  to="/Services"><li className='hover:underline'>Services</li></Link>
-        <Link  to="/About"><li className='hover:underline'>About</li></Link>
-            </div>
+  <div className='grid justify-center bg-gray-900 text-gray-500'>
             <div className='pl-10 mt-10'>
         <h3 class="text-xl font-bold mb-4">Subscribe</h3>
       <p class="text-sm mb-4">Get the latest updates right in your inbox.</p>
       </div>
       <div>
       <form action="post">
-        <input className='w-[300px] ml-28 mb-10 h-10 rounded-lg h-50 pl-10' type="text" id='Enter your email' placeholder='Enter your email'/><button class="px-4 relative right-8 m-10 bg-pink-600 transition-all duration-300 ease-in-out hover:bg-pink-700 rounded-lg text-white h-10 ">Join</button>
+        <input className='w-[285px] max-sm:w-[250px] ml-10 max-sm:ml-28 h-10 rounded-lg h-50 pl-10' type="text" id='Enter your email' placeholder='Enter your email'/><button class="px-4 relative m-5 max-sm:bottom-[60px] max-sm:left-5 bg-pink-600 transition-all duration-300 ease-in-out hover:bg-pink-700 rounded-lg text-white h-10 ">Join</button>
       </form>
       </div>
       <div>

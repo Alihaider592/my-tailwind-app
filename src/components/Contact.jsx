@@ -3,9 +3,9 @@ import Contactusform from './Contactusform';
 import { Link } from 'react-router-dom'
 export default function Contact() {
   return (
-    <div className=' flex w-full min-h-screen  bg-purple-500 sm:flex-wrap sm:justify-center '>
+    <div className=' flex w-full min-h-screen max-sm:inline-block max-sm:w-full max-sm:min-h-full  bg-purple-500 sm:flex-wrap sm:justify-center '>
     <div className="max-w-3xl  mx- p-6 sm:p-5">
-      <h1 className="text-4xl font-bold text-white ml-[500px] sm:ml-0 mb-6 ">Contact Us</h1>
+      <h1 className="text-4xl font-bold text-white ml-[500px] max-sm:ml-0 sm:ml-0 mb-6 ">Contact Us</h1>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold text-white mb-3">
@@ -23,7 +23,7 @@ export default function Contact() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold text-white mb-3">How to Reach Us</h2>
         <p className="text-white leading-relaxed">
-          The easiest way to get in touch is through email at{" "}
+          The easiest way to get in touch is through email at
           <span className="font-medium text-blue-600">alicoder592@gmail.com</span>,
           or you can fill out the form below. Once we receive your message, our
           support team carefully reviews it and gets back to you as quickly as

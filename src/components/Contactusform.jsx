@@ -39,11 +39,11 @@ const Contactusform = () => {
   return (
     <div>
       <section>
-      <div className='h-[420px] w-[500px] mt-28 mr-10  pl-32 bg-white bg-opacity-10 rounded-xl shadow-lg '>
-        <h1 className='text-white text-2xl font-bold pt-5 pl-[65px] '>Contact Us</h1>
-        <p className='text-white mt-1 m-5'>We will get back to you asap!</p>
-        <form onSubmit={handleSubmit} action="post">
-          <input className='p-2 w-[263px] rounded-lg border-1 border-gray-400'
+      <div className='h-[420px] w-[500px] mt-28 mr-10 max-sm:mb-5 max-sm:w-[300px]  max-sm:ml-10 max-sm:pl-0  pl-32 bg-white bg-opacity-10 rounded-xl shadow-lg '>
+        <h1 className='text-white text-2xl font-bold pt-5 pl-[65px] max-sm:pl-0  max-sm:flex max-sm:justify-center '>Contact Us</h1>
+        <p className='text-white mt-1 max-sm:pl-0  max-sm:flex max-sm:justify-center  m-5'>We will get back to you asap!</p>
+        <form className='max-sm:pl-0  max-sm:grid max-sm:justify-center' onSubmit={handleSubmit} action="post">
+          <input className='p-2 w-[263px]  rounded-lg border-1 border-gray-400'
            type="FirstName"
             id='FirstName'
              placeholder='FirstName'
@@ -75,7 +75,7 @@ const Contactusform = () => {
             onChange={handleChange}
             required
               />
-        <button class="px-8 py-3 bg-pink-600 hover:bg-pink-700 top-[70px] right-[170px]  rounded-lg text-white relative font-medium shadow-lg">Send</button>
+        <button class="px-8 py-3 bg-pink-600 hover:bg-pink-700  max-sm:w-12 max-sm:grid max-sm:justify-center max-sm:top-5 max-sm:left-[100px] top-[70px] right-[170px]  rounded-lg text-white relative font-medium shadow-lg">Send</button>
         </form>
       </div>
                    <ToastContainer position="top-center" autoClose="3000" />
