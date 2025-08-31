@@ -8,7 +8,7 @@ const Navbar = ({ user, onLogout }) => {
   return (
     <div>
       <nav
-        className="flex items-center justify-between 
+        className="flex items-center sticky  justify-between 
         text-white font-bold 
         bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
         p-4"
@@ -22,7 +22,7 @@ const Navbar = ({ user, onLogout }) => {
           />
         </div>
 
-        <div className="block sm:hidden">
+        <div className="block sm:hidden  ">
           <Hamburgercomponents />
         </div>
 

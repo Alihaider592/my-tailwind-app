@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
-const Hamburgernavbar = ({ user, onLogout }) => {
+const Hamburgernavbar = ({ user, onLogout ,onclose }) => {
   const navigate = useNavigate();
   return (
     <div>
-      <nav className="flex flex-col absolute z-50 right-[2%] items-center
-        text-black bg-white z- font-bold 
+      <nav className="fixed  right-0   top-0 w-64 h-full  bg-white z-[9999] p-6 shadow-l
+  items-center
+        text-black  z- font-bold 
         
-        p-4">
+       ">
         <ul className="
           justify-start 
           md:gap-10 
@@ -15,11 +16,11 @@ const Hamburgernavbar = ({ user, onLogout }) => {
           
           ">
           {/* <Hamburger/> */}
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/Contact">Contact</Link></li>
-          <li><Link to="/Blog">Blog</Link></li>
-          <li><Link to="/Services">Services</Link></li>
-          <li><Link to="/About">About</Link></li>
+          <li><Link to="/" onClick={onclose}>Home</Link></li>
+          <li><Link to="/Contact" onClick={onclose}>Contact</Link></li>
+          <li><Link to="/Blog"onClick={onclose}>Blog</Link></li>
+          <li><Link to="/Services" onClick={onclose}>Services</Link></li>
+          <li><Link to="/About" onClick={onclose}>About</Link></li>
         </ul>
          
 
@@ -32,8 +33,8 @@ const Hamburgernavbar = ({ user, onLogout }) => {
           lg:gap-10
           list-none
         ">
-          <li><Link to="/Login" className="hover:text-yellow-300 hover:underline active:text-red-500">Log in</Link></li>
-          <li><Link to="/Signup" className="hover:text-yellow-300 hover:underline active:text-red-500">Sign up</Link></li>
+          <li><Link to="/Login" onClick={onclose} className="hover:text-yellow-300 hover:underline active:text-red-500">Log in</Link></li>
+          <li><Link to="/Signup" onClick={onclose} className="hover:text-yellow-300 hover:underline active:text-red-500">Sign up</Link></li>
           {/* <button 
             className="hover:text-yellow-300 hover:underline active:text-red-500"
             onClick={() => handleLogout(null, navigate)}

@@ -86,9 +86,9 @@ const Services = () => {
     buttonColor: 'bg-red-500',
   }
   return (
-    <div className='bg-purple-500 '>
+    <div className='bg-purple-500 w-full h-full max-sm:relative fixed '>
       {/* main text */}
-        <main className="py-16">
+        <main className="py-16 ">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">How DevLogix Helps You Succeed</h1>
           <p className="text-lg text-white max-w-2xl mx-auto">

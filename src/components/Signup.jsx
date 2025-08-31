@@ -39,12 +39,12 @@ const Signup = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r w-full min-h-screen from-indigo-800 via-purple-800 to-pink-800 p-[104px] justify-center items-center flex">
-      <div className="rounded-3xl z-10 relative h-[450px] w-96 text-center bg-white shadow-2xl shadow-purple-400 shadow-inner bg-transparent">
+    <div className="bg-gradient-to-r w-full min-h-screen fixed from-indigo-800 via-purple-800 to-pink-800 p-[104px] justify-center items-center flex">
+      <div className="rounded-3xl max-sm:w-80 z-10 relative h-[450px] w-96 text-center bg-white shadow-2xl shadow-purple-400 shadow-inner bg-transparent">
         <h1 className="text-3xl font-bold  mt-10">Sign up</h1>
         <form onSubmit={handleSubmit}>
           <input
-            className="h-10 w-80 rounded-3xl bg-gray-300 border-2 border-gray-600 placeholder:text-stone-700 opacity-60 pl-10 text-blue-950 mb-1 mt-8"
+            className="h-10 w-80 rounded-3xl max-sm:w-72 bg-gray-300 border-2 border-gray-600 placeholder:text-stone-700 opacity-60 pl-10 text-blue-950 mb-1 mt-8"
             type="text"
             id="username"
             placeholder="Username"
@@ -53,7 +53,7 @@ const Signup = () => {
             required
           />
           <input
-            className="h-10 w-80 rounded-3xl m-5 opacity-60 pl-10 bg-gray-300 border-2 border-gray-600 placeholder:text-stone-700 text-blue-950"
+            className="h-10 w-80 rounded-3xl m-5 opacity-60 max-sm:w-72 pl-10 bg-gray-300 border-2 border-gray-600 placeholder:text-stone-700 text-blue-950"
             type="email"
             id="email"
             placeholder="Email"
@@ -62,7 +62,7 @@ const Signup = () => {
             required
           />
           <input
-            className="h-10 w-80 rounded-3xl opacity-60 pl-10 bg-gray-300 border-2 border-gray-600 placeholder:text-stone-700 text-blue-950"
+            className="h-10 w-80 rounded-3xl opacity-60 pl-10 bg-gray-300 max-sm:w-72 border-2 border-gray-600 placeholder:text-stone-700 text-blue-950"
             type="password"
             id="password"
             placeholder="Password"
@@ -70,7 +70,7 @@ const Signup = () => {
             onChange={handleChange}
             required
           />
-          <div className="mt-7 relative right-[85px]">
+          <div className="mt-7  relative right-[85px]">
             <input
               className="fill-blue-400"
               type="radio"

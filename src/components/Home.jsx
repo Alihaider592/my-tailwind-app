@@ -6,22 +6,37 @@ const Home = () => {
     <>
     <img className='absolute opacity-45 blur-sm h-96 w-[100%]' src="imgback.png"/>
     <div className='h-96 w-full z-10 p-20  font-bold  bg-purple-800'>
-      <h1 className=' relative text-5xl flex max-sm:text-4xl items-center gap-2 justify-center mb-5 font-bold z-10 '> <div className='text-pink-500'> Welocom</div><div className='text-purple-500'> to </div><div className='text-yellow-500'> Devlogix</div> </h1>
-      <p class="z-10 text-lg md:text-xl sm:left-6 text-gray-300 mb-8 max-sm:text-sm sm:font-size [17px] height-[100px] relative left-[18px];">
-      <div className='z-10 flex relative items-center justify-center m-1 '>Your daily dose of programming tips, tutorials, and tech insights.Whether you're debugging at</div>  
-      <div className='z-10 relative flex items-center justify-center '> midnight or building your next big idea,we've got the knowledge you  </div>
-     <div className='flex relative items-center justify-center '>  need — byte by byte.</div>
-   <div className="flex justify-center mt-6">
-  <button className="px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 
-                     bg-pink-600 hover:bg-pink-700 
-                     rounded-lg text-white font-medium shadow-lg 
-                     transition duration-300 ease-in-out">
-    <Link to="/Learnmore">Learn more →</Link>
-  </button>
+      <h1 className=' relative text-5xl flex max-sm:text-3xl items-center gap-2 justify-center mb-5 font-bold z-10 '> <div className='text-pink-500'> Welocom</div><div className='text-purple-500'> to </div><div className='text-yellow-500'> Devlogix</div> </h1>
+      <div className="z-10 text-gray-300 mb-8 sm:mx-4">
+
+ 
+  <div className="flex items-center justify-center text-sm relative sm:text-[8px] md:text-xl text-center mb-2">
+    Your daily dose of programming tips, tutorials, and tech insights. 
+    Whether you're debugging at
+  </div>  
+
+ 
+  <div className="flex items-center justify-center relative text-sm sm:text-[8px] md:text-lg text-center  mb-2">
+    midnight or building your next big idea, we've got the knowledge you
+  </div>
+
+  
+  <div className="flex items-center justify-center text-sm relative sm:text-[8px] md:text-xl text-center  mb-4">
+    need — byte by byte.
+  </div>
+
+  <div className="flex justify-center relative text-[12px] bottom-3 mt-6">
+    <button className="px-6 py-3 sm:px-4 sm:py-2 md:px-10 md:py-4 
+                       bg-gradient-to-r from-pink-600 to-purple-600 
+                       hover:from-pink-700 hover:to-purple-700 
+                       rounded-xl text-white  shadow-xl  
+                       transition-transform duration-300 ease-in-out 
+                       hover:scale-105">
+      <Link to="/Learnmore">Learn more →</Link>
+    </button>
+  </div>
 </div>
 
-
-    </p>
     <div className="flex justify-center mt-6">
 </div>
 
@@ -48,7 +63,7 @@ const Home = () => {
       <p><strong>Industry News & Trends</strong> — Stay informed about the latest in tech and software.</p>
     </li>
     <div>
-      <img className='relative  left-8' src="img40.png"/>
+      <img className='relative max-sm:hidden left-8' src="img40.png"/>
     </div>
   </ul>
 </section> 
@@ -81,7 +96,7 @@ const Home = () => {
       </div>
       <div>
       <form action="post">
-        <input className='w-[285px] max-sm:w-[250px] ml-10 max-sm:ml-28 h-10 rounded-lg h-50 pl-10' type="text" id='Enter your email' placeholder='Enter your email'/><button class="px-4 relative m-5 max-sm:bottom-[60px] max-sm:left-5 bg-pink-600 transition-all duration-300 ease-in-out hover:bg-pink-700 rounded-lg text-white h-10 ">Join</button>
+        <input className='w-[285px] max-sm:w-[230px] ml-10 max-sm:ml-28 h-10 rounded-lg h-50 pl-10' type="text" id='Enter your email' placeholder='Enter your email'/><button class="px-4 relative m-5 max-sm:bottom-[60px] max-sm:left-5 bg-pink-600 transition-all duration-300 ease-in-out hover:bg-pink-700 rounded-lg text-white h-10 ">Join</button>
       </form>
       </div>
       <div>
