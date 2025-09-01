@@ -145,7 +145,7 @@ const cards = [
 const Blog = () => {
   return (
     <div className='bg-purple-500 '>
-      <div className="relative  w-full">
+      <div className="relative ">
         <img
           className="w-full object-cover h-96 opacity-70 shadow-purple shadow-sm"
           src="img2.png"

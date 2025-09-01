@@ -90,8 +90,8 @@ const Services = () => {
       {/* main text */}
         <main className="py-16 ">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">How DevLogix Helps You Succeed</h1>
-          <p className="text-lg text-white max-w-2xl mx-auto">
+          <h1 className="text-4xl max-sm:text-3xl max-sm:m-5 md:text-5xl font-extrabold text-white mb-4">How DevLogix Helps You Succeed</h1>
+          <p className="text-lg text-white max-w-2xl max-sm:m-3 mx-auto">
             Our services are designed to support you at every stage of your journey, from learning the basics to advancing your career.
           </p>
         </div>

@@ -25,14 +25,14 @@ const Home = () => {
     need — byte by byte.
   </div>
 
-  <div className="flex justify-center relative text-[12px] bottom-3 mt-6">
-    <button className="px-6 py-3 sm:px-4 sm:py-2 md:px-10 md:py-4 
-                       bg-gradient-to-r from-pink-600 to-purple-600 
-                       hover:from-pink-700 hover:to-purple-700 
-                       rounded-xl text-white  shadow-xl  
+  <div className="flex justify-center relative text-[12px] max-sm:bottom-3 mt-6">
+    <button  className="block px-6 py-3 sm:px-4 sm:py-2 md:px-10 md:py-4 
+                       bg-pink-600 
+                         hover:bg-pink-700
+                       rounded-lg text-white  shadow-xl  
                        transition-transform duration-300 ease-in-out 
-                       hover:scale-105">
-      <Link to="/Learnmore">Learn more →</Link>
+                       hover:scale-105 ">
+      <Link  to="/About">  Learn more →</Link>
     </button>
   </div>
 </div>

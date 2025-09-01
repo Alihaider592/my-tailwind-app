@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Hamburgercomponents from "./Hamburger";
 import { useNavigate } from "react-router-dom";
-
+import Protectroute from "./Protectroute";
 const Navbar = ({ user, onLogout }) => {
   const navigate = useNavigate();
 
@@ -15,22 +16,20 @@ const Navbar = ({ user, onLogout }) => {
       >
         {/* Logo */}
         <div className="flex items-center text-xl font-extrabold">
-          <img
-            src="/logo.svg"
-            alt="Logo"
-            className="h-12 w-auto invert"
-          />
+          <img src="/logo.svg" alt="Logo" className="h-12 w-auto invert" />
         </div>
-
         <div className="block sm:hidden  ">
           <Hamburgercomponents />
         </div>
-
-        <ul
-          className="hidden sm:flex items-center gap-6 md:gap-10 lg:gap-12"
-        >
+        <ul className="hidden sm:flex items-center gap-6 md:gap-10 lg:gap-12">
           <li>
-            <Link  to="/" className="hover:text-yellow-300 hover:underline active:text-red-500">Home</Link></li>
+            <Link
+              to="/"
+              className="hover:text-yellow-300 hover:underline active:text-red-500"
+            >
+              Home
+            </Link>
+          </li>
           <li>
             <Link
               to="/Contact"
@@ -48,7 +47,9 @@ const Navbar = ({ user, onLogout }) => {
             </Link>
           </li>
           <li>
-            <Link to="/Services" className="hover:text-yellow-300 hover:underline active:text-red-500"
+            <Link
+              to="/Services"
+              className="hover:text-yellow-300 hover:underline active:text-red-500"
             >
               Services
             </Link>
@@ -62,6 +63,7 @@ const Navbar = ({ user, onLogout }) => {
             </Link>
           </li>
         </ul>
+
         <ul className="hidden sm:flex items-center min-sm:text-sm gap-6 md:gap-8 lg:gap-10">
           <li>
             <Link
