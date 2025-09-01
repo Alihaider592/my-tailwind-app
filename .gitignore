@@ -1,4 +1,4 @@
-cat << 'EOF' > .gitignore
+
 # dependencies
 /node_modules
 /.pnp
@@ -35,4 +35,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
-EOF
+
