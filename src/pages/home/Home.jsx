@@ -96,7 +96,7 @@ const Home = () => {
       </div>
       <div>
       <form action="post">
-        <input className='w-[285px] max-sm:w-[230px] ml-10 max-sm:ml-28 h-10 rounded-lg h-50 pl-10' type="text" id='Enter your email' placeholder='Enter your email'/><button class="px-4 relative m-5 max-sm:bottom-[60px] max-sm:left-5 bg-pink-600 transition-all duration-300 ease-in-out hover:bg-pink-700 rounded-lg text-white h-10 ">Join</button>
+        <input className='w-[285px] max-sm:w-[225px] ml-10 max-sm:ml-28 h-10 rounded-lg h-50 pl-10' type="text" id='Enter your email' placeholder='Enter your email'/><button class="px-4 relative m-5 max-sm:bottom-[60px] max-sm:left-5 bg-pink-600 transition-all duration-300 ease-in-out hover:bg-pink-700 rounded-lg text-white h-10 ">Join</button>
       </form>
       </div>
       <div>
