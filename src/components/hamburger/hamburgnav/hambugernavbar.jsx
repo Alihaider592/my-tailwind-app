@@ -14,7 +14,7 @@ const Hamburgernavbar = ({ user, onLogout ,onclose }) => {
           ">
           <li className="p-1"><Link  to="/" onClick={onclose} className="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded">Home</Link></li>
           <li className="p-1"><Link  to="/Contact" onClick={onclose} className="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded">Contact</Link></li>
-          <li className="p-1"><Link to="/Blog"onClick={onclose} className="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded">Blog</Link></li>
+          <li className="p-1"><Link to="/Blog"onClick={onclose} className="block px-3  py-2 text-gray-800 hover:bg-gray-100 rounded">Blog</Link></li>
           <li className="p-1"><Link to="/Services" onClick={onclose} className="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded">Services</Link></li>
           <li className="p-1"><Link to="/About" onClick={onclose} className="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded">About</Link></li>
         </ul>

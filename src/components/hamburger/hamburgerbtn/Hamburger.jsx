@@ -22,13 +22,13 @@ return()=>{
         size={22}
         toggled={open}
         toggle={setOpen}
-        className="block md:hidden"
+        className="block md:hidden "
       />
 
       {open &&
         createPortal(
           <div className="fixed  inset-0 z-[9999999] bg-whites w-[60%]">
-            <Hamburgernavbar onclose={() => setOpen(false)} />
+            <Hamburgernavbar onclose={() => setOpen(false)}  />
           </div>,
           document.body
         )}
